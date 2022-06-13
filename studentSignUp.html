@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="signUpStylesheet.css">
+</head>
+<body>
+<div class='bold-line'></div>
+<div class='container'>
+  
+  <div class='window'>
+    <div class='overlay'></div>
+    
+    
+    <div class='content'>
+      <div class='welcome'>Hello There Students!</div>
+      <div class='subtitle'>Welcome to ClassCloud please make an account to continue
+      </div>
+
+        <form id="studentForm"></form>
+      <div class='input-fields'>
+        <input type='text' placeholder='Name' class='input-line full-width' id="name" required></input>
+        <input type='email' placeholder='Email' class='input-line full-width' id="email" required></input>
+        <input type='password' placeholder='Password' class='input-line full-width' ' id="OGpassword"  required></input>
+         <input type='password' placeholder='Repeat Password' class='input-line full-width' id="password" required></input>
+
+<br><br>
+ <select id="grade" name="grade" class='input-line full-width' required>
+<option value="" disabled selected hidden>What Grade Are you in?</option>
+  <option value="1">1st Grade</option>
+  <option value="2">2nd Grade</option>
+  <option value="3">3rd Grade</option>
+  <option value="4">4th Grade</option>
+  <option value="5">5th Grade</option>
+  <option value="6">6th Grade</option>
+  <option value="7">7th Grade</option>
+
+</select>
+ 
+
+      <br><br>
+      <div><button id='button' class='ghost-round full-width'>Create Account</button></div>
+      <div><button id='button' onclick="window.location.href='logInPage.php';" class='ghost-round full-width'>Login </button></div>
+    </div>
+  </form>
+
+  </div>
+</div>
+
+<script src="studentSignup.js"></script>
+
+</body>

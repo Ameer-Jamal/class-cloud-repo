@@ -1,0 +1,66 @@
+.header {
+    grid-column-start: 1;
+    grid-column-end:4;
+    color: white;
+
+margin: 0;
+padding: 0;
+font-family:Nunito,sans-serif;
+}
+
+
+
+.navContainer{
+
+    width: 100%;
+    background-color: #1D1B31;
+
+}
+
+.navbar{
+
+display: grid;
+grid-template-columns: 0.2fr, auto, 1fr;
+
+height: 80px;
+
+max-width: 1720px;
+margin: 0 auto;
+}
+#logoPic{
+    float: right;
+    width: 40px;
+    height: 40px;
+    display: grid;
+}
+#navbarLogo{
+color:white;
+justify-self: start;
+margin-left: 20px;
+font-weight: 400;
+}
+
+.navMenu{
+display:inline-flex;
+grid-auto-columns: repeat(5,auto);
+list-style: none;
+text-align: center;
+justify-self: end;
+margin:10px;
+width: 90%;
+}
+
+
+.navLinks{
+    padding: 10px;
+    justify-self: end;
+    font-weight: 200;
+color: white;
+text-decoration: none;
+}
+
+.navLinks:hover{
+    color: aquamarine;
+    transition: all 0.2 ease-out;
+
+}

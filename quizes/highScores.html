@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="highScores.css">
+    <script src="https://kit.fontawesome.com/944d6fb1a0.js" crossorigin="anonymous"></script>
+
+    <title>HighScores</title>
+</head>
+<body>
+    <div class="container">
+     
+        <div id="highScores" class="flexColumn flexCenter">
+           <h1 id="finalScore">LeaderBoard</h1>
+           <p>Here are your past scores</p>
+           <ul id="highScoresList"></ul>
+            <a href="/class-cloud-repo/quizes/end.html" class="btn">Back</a>
+            <a class="btn" onclick="localStorage.clear(); location.reload();">Clear Scores</a>
+
+        </div>
+
+        <script src="highScores.js"></script>
+</body>
+</html>

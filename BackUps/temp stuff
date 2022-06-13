@@ -1,0 +1,33 @@
+<div class="home">
+
+
+<div class="container">
+    <div class="header">
+
+      Welcome to the ClassCloud experience    
+    
+    </div>
+
+
+
+
+  <div class="image-grid">
+
+
+
+  <img class="image-grid-col-2 image-grid-row-2" src="https://img.freepik.com/free-vector/hand-drawn-science-education-background_23-2148499325.jpg?t=st=1653166010~exp=1653166610~hmac=d438882f2a594e9690677e51e5697d544ffc5a452e37d152a91084f5f0532b02&w=1380" alt="">
+  <img src="https://aup.imgix.net/user_images/164014/private-lessons-math-analysis-algebra-probability-statistics-arabic-1616583057.jpg?ch=Width,DPR&fit=crop&crop=faces&auto=format,compress&w=300&h=300&dpr=2.625&frame=1" alt="">
+  <img src="img/eng.jpg" alt="">
+  <img src="https://media.almayadeen.net/archive/image/2021/6/29/a87c0c1d-694a-46d9-a494-843465065963.jpg" alt="">
+  <img src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2020/07/Watad-Subjects-Color-Lineal-Style-Islamic-Studies-624x374.png" alt="">
+
+    </div>
+
+    <div class="footer">
+        footer stuff
+    </div>
+</div>
+
+
+ <img class="image-grid-col-2 image-grid-row-2" src="https://img.freepik.com/free-vector/hand-drawn-science-education-background_23-2148499325.jpg?t=st=1653166010~exp=1653166610~hmac=d438882f2a594e9690677e51e5697d544ffc5a452e37d152a91084f5f0532b02&w=1380" alt="">
+  

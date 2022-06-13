@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ClassCloud - Student Learning Platform </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="Stylesheet" href="studentPage.css"
+</head>
+<body>
+    
+
+<div class="sidebar">
+    <div class="logoContent">
+        <div class="logo">
+             <i class="fa fa-creative-commons" ></i>
+            <div class="logoName">ClassCloud </div>
+        </div>
+                <i class="fa fa-bars" id="menuBtn"></i>
+    </div>
+    <ul class="navList">
+        <li>
+             <i class="fa fa-search" id="searchBtn"></i>
+            <input id="searchValue" type="text" maxlength="128" placeholder="Search..">
+            <span class="tooltip">Search Youtube</span>
+            
+        </li>
+         <li>
+            <a href="#">
+                <i class="fa fa-th-large"></i>
+                <span class="linksName">Dashboard</span>
+            </a>
+            <span class="tooltip">Access Dash</span>
+        </li>
+         <li>
+            <a href="#">
+                <i class="fa fa-user-circle"></i>
+                <span class="linksName">User</span>
+            </a>
+            <span class="tooltip">Check Yourself</span>
+        </li>
+         <li>
+            <a href="#">
+                <i class="fa fa-cog"></i>
+                <span class="linksName">Settings</span>
+            </a>
+            <span class="tooltip">Adjust Settings</span>
+        </li>
+         <li>
+            <a href="#">
+                <i class="fa fa-sign-out"></i>
+                <span class="linksName">Sign Out</span>
+            </a>
+            <span class="tooltip">See ya soon</span>
+        </li>
+    </ul>
+    <div class="profileContent">
+        <div class="profile">
+            <div class="profileDetails">
+                <img src="img/classCloudLogo.png">
+                <div class="nameJob">
+                    <div class="welcome">Welcome</div>
+                    <div class="name">StudentNameHere</div>
+                    <div class="job">ClassCloud</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="home">
+
+
+<div class="container">
+    <div class="header">
+
+      Welcome to the ClassCloud experience    
+    
+    </div>
+
+
+
+
+  <div class="image-grid">
+
+
+
+  <img class="image-grid-col-2 image-grid-row-2" src="https://img.freepik.com/free-vector/hand-drawn-science-education-background_23-2148499325.jpg?t=st=1653166010~exp=1653166610~hmac=d438882f2a594e9690677e51e5697d544ffc5a452e37d152a91084f5f0532b02&w=1380" alt="">
+  <img src="https://aup.imgix.net/user_images/164014/private-lessons-math-analysis-algebra-probability-statistics-arabic-1616583057.jpg?ch=Width,DPR&fit=crop&crop=faces&auto=format,compress&w=300&h=300&dpr=2.625&frame=1" alt="">
+  <img src="img/eng.jpg" alt="">
+  <img src="https://media.almayadeen.net/archive/image/2021/6/29/a87c0c1d-694a-46d9-a494-843465065963.jpg" alt="">
+  <img src="https://assets-watad-me.fra1.digitaloceanspaces.com/wp-content/uploads/2020/07/Watad-Subjects-Color-Lineal-Style-Islamic-Studies-624x374.png" alt="">
+
+    </div>
+
+    <div class="footer">
+        footer stuff
+    </div>
+</div>
+
+
+
+
+</div>
+
+
+<script>
+    window.onload = function(){ 
+        document.body.style.zoom = "125%";
+    let menuBtn = document.querySelector("#menuBtn");
+    let sidebar = document.querySelector(".sidebar");
+    let searchBtn = document.querySelector("#searchBtn");
+    
+    menuBtn.onmousedown = function() {
+        sidebar.classList.toggle("active");
+        console.log("menu button has been pressed");
+    };
+    
+    
+    searchBtn.onmousedown = function() {   
+         let input = document.querySelector("#searchValue").value;
+         let query = "https://www.youtube.com/results?search_query=".concat(input)
+        console.log(query)
+         window.open(
+              query, "_blank"); 
+              console.log("Search button has been pressed");
+        };
+
+
+    };
+</script>    
+
+</body>
+</html>

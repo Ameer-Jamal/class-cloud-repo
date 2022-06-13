@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700;800&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Nunito;
+    font-weight: 700;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;          /* Firefox */
+    image-rendering: -o-crisp-edges;            /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
+    -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+    
+
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+.home{
+    background: #fff;
+    background-size: cover;
+    background-position:50% 50%;
+    width: calc(100% - 78px);
+    position: absolute;
+    height:100%;
+    left: 78px;
+    transition:all 0.8s ease;
+}
+
+
+.home .textNormal{
+    font-size: 24px;
+    font-weight: 700;
+    color: #1d1b31;
+    margin-top: 12px;
+    margin-left: 12px;
+
+}
+
+.sidebar.active ~ .home{
+        width: calc(100% - 240px);
+        left:240px;
+}
+
+.home .container{
+    height:100vh;
+    margin-top: 0px;
+    margin-left: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    gap: 10px;
+    padding:5px;
+
+}
+
+.home .container div{
+    /*padding: 5px;*/
+  /*  border: 1px solid black;*/
+}
+
+
+
+
+
+
+/*Image grid*/
+
+
+.image-grid {
+    grid-column-start: 1;
+    grid-column-end:4;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr))
+}
+
+
+.imgWrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.imgWrapper > img{
+    display:block;
+    width:100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.imgWrapper > .content{
+    position: absolute;
+    inset: 0;
+    font-size:2rem;
+    padding: 33px;
+    background:rgb(17,16,29,.4) ;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: white;
+}
+
+.imgWrapper > img,
+.imgWrapper > .content{
+    transition: 0.3s ease-in-out;
+}
+
+
+.imgWrapper:hover > img.blur{
+    filter:blur(3px);
+}
+
+
+.imgWrapper:hover > img.zoom{
+    transform:scale(1.2);
+}
+
+
+.imgWrapper > .content.fade {
+    opacity: 0;
+}
+
+.imgWrapper:hover > .content.fade {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
