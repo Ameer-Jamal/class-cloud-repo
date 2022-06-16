@@ -1,6 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', 'usbw', 'classclouddb');
-
+include 'dbh.php';
 
 
 
